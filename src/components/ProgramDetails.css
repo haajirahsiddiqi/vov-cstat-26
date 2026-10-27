@@ -1,0 +1,344 @@
+/* Container */
+.program-details-container {
+    min-height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+/* Hero Section */
+.program-hero-section {
+    height: 400px;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.program-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 0 2rem;
+}
+
+.program-title-section {
+    margin-bottom: 2rem;
+}
+
+.program-page-title {
+    font-family: 'Stint Ultra Condensed', 'Arial Black', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+    letter-spacing: 0.15em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: #f8f9fa;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Stint Ultra Condensed', 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #2c3e50;
+    margin: 50px 0 30px 0;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Theme Section */
+.theme-section {
+    margin-bottom: 60px;
+}
+
+.theme-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.theme-image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-poster {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.theme-text-column {
+    padding: 20px 0;
+}
+
+.theme-description {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0 0 20px 0;
+    text-align: justify;
+}
+
+/* Content Sections */
+.content-section {
+    margin-bottom: 60px;
+}
+
+/* Speakers List */
+.speakers-list {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.speakers-list li {
+    margin: 15px 0;
+    color: #555;
+}
+
+.speakers-list em {
+    color: #1a365d;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Speaker Photos Section */
+.speakers-photos-section {
+    margin-bottom: 60px;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.speaker-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Schedule Section */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.schedule-item {
+    text-align: center;
+}
+
+.schedule-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.schedule-image:hover {
+    transform: scale(1.02);
+}
+
+/* Program Link Section */
+.program-link-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.program-link-text {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0 0 20px 0;
+}
+
+.program-document-btn {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: #34495e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.program-document-btn:hover {
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Strong text */
+strong {
+    font-weight: 600;
+    color: #1a365d;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .program-page-title {
+        font-size: 4.5rem;
+    }
+    
+    .theme-grid {
+        gap: 40px;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .program-page-title {
+        font-size: 3.5rem;
+    }
+    
+    .main-content {
+        padding: 40px 20px;
+    }
+    
+    .theme-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .theme-text-column {
+        padding: 10px 0;
+    }
+    
+    .theme-description {
+        text-align: left;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .program-hero-section {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-page-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .main-content {
+        padding: 30px 15px;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .theme-poster {
+        max-width: 300px;
+    }
+    
+    .program-document-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .program-link-section {
+        padding: 20px;
+    }
+}
