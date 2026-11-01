@@ -14,6 +14,7 @@ export default function Home() {
           <div className="hero__actions">
             <Link to="/Registration" className="btn btn--primary">Register</Link>
             <Link to="/ProgramDetails" className="btn btn--light">Program Details</Link>
+            <Link to="/Vendors" className="btn btn--light">Check Out Vendors</Link>
           </div>
         </div>
       </section>

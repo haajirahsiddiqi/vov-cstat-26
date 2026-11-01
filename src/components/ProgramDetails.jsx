@@ -1,8 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ProgramDetails.css';
 import { program, links, site } from '../siteContent.js';
 
 const hide = (e) => (e.currentTarget.style.display = 'none');
+
+function SpeakerCard({ person }) {
+  const [open, setOpen] = useState(false);
+  const initials = person.name
+    .split(' ')
+    .filter((w) => !/^(Shaykh|Mufti|Ustadha|Aalima|Qari|Dr\.|Sr\.)$/.test(w))
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join('');
+
+  return (
+    <div className={`speaker-card ${open ? 'speaker-card--open' : ''}`}>
+      <button
+        type="button"
+        className="speaker-card__header"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
+        {person.photo ? (
+          <img src={person.photo} alt={person.name} className="speaker-card__photo" onError={hide} />
+        ) : (
+          <span className="speaker-card__initials">{initials}</span>
+        )}
+        <span className="speaker-card__text">
+          <span className="speaker-card__name">{person.name}</span>
+          {person.title && <span className="speaker-card__title">{person.title}</span>}
+        </span>
+        <span className="speaker-card__chevron">{open ? '−' : '+'}</span>
+      </button>
+      {open && (
+        <div className="speaker-card__bio">
+          {person.bio ? person.bio : 'Introduction coming soon.'}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function ProgramDetails() {
   return (
@@ -35,21 +72,21 @@ export default function ProgramDetails() {
 
         <section className="content-section">
           <h2 className="section-title">Speakers</h2>
-          <ul className="speakers-list">
-            {program.speakers.map((s, i) => (
-              <li key={i}><em>{s.name}</em>{s.bio ? <> &ndash; {s.bio}</> : null}</li>
+          <div className="speaker-grid">
+            {program.speakers.map((s) => (
+              <SpeakerCard key={s.name} person={s} />
             ))}
-          </ul>
+          </div>
         </section>
 
         {program.reciters.length > 0 && (
           <section className="content-section">
             <h2 className="section-title">Reciters</h2>
-            <ul className="speakers-list">
-              {program.reciters.map((r, i) => (
-                <li key={i}><em>{r.name}</em>{r.bio ? <> &ndash; {r.bio}</> : null}</li>
+            <div className="speaker-grid">
+              {program.reciters.map((r) => (
+                <SpeakerCard key={r.name} person={r} />
               ))}
-            </ul>
+            </div>
             {program.reciterNote && <p className="theme-description">{program.reciterNote}</p>}
           </section>
         )}
