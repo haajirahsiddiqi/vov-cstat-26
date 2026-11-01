@@ -3,11 +3,45 @@ import { Link } from 'react-router-dom';
 import PageHeader from './PageHeader.jsx';
 import { vendors } from '../siteContent.js';
 
+const hide = (e) => (e.currentTarget.style.display = 'none');
+
+function VendorCard({ vendor }) {
+  const handle = vendor.instagram ? vendor.instagram.replace(/^@/, '') : '';
+  const letter = vendor.name.trim()[0] || '?';
+
+  return (
+    <div className={`vendor-tile ${vendor.tba ? 'vendor-tile--tba' : ''}`}>
+      <div className="vendor-tile__top">
+        {vendor.logo ? (
+          <img src={vendor.logo} alt={vendor.name} className="vendor-tile__logo" onError={hide} />
+        ) : (
+          <span className="vendor-tile__initial">{vendor.tba ? '?' : letter}</span>
+        )}
+      </div>
+      <div className="vendor-tile__body">
+        <h3 className="vendor-tile__name">{vendor.name}</h3>
+        {vendor.tagline && <p className="vendor-tile__tagline">{vendor.tagline}</p>}
+        {handle && (
+          <a
+            className="vendor-tile__ig"
+            href={`https://instagram.com/${handle}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            @{handle}
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Vendors() {
   return (
     <>
-      <PageHeader title="Vendors" />
+      <PageHeader title={vendors.title} />
       <section className="container page-body">
+        {vendors.eyebrow && <p className="vendor-eyebrow">{vendors.eyebrow}</p>}
         <p className="body-text">{vendors.intro}</p>
 
         {vendors.list.length === 0 && (
@@ -16,27 +50,10 @@ export default function Vendors() {
 
         <div className="vendor-grid">
           {vendors.list.map((v) => (
-            <div key={v.name} className="vendor-card">
-              <h3>{v.name}</h3>
-              <p>{v.tagline}</p>
-              {v.instagram && (
-                <a
-                  className="vendor-ig"
-                  href={`https://instagram.com/${v.instagram.replace(/^@/, '')}`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  @{v.instagram.replace(/^@/, '')}
-                </a>
-              )}
-            </div>
+            <VendorCard key={v.name} vendor={v} />
           ))}
         </div>
 
-        <div className="callout">
-          <p>Want to be a vendor at Voices of Virtue? Get in touch and we will share the details.</p>
-          <Link to="/ContactUs" className="btn btn--dark">Become a vendor</Link>
-        </div>
       </section>
     </>
   );

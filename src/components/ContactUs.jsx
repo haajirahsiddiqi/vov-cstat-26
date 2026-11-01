@@ -39,7 +39,6 @@ export default function ContactUs() {
         <div>
           <h2 className="section-title">Get in touch</h2>
           <p className="body-text"><strong>Email:</strong> <a href={`mailto:${site.email}`}>{site.email}</a></p>
-          <p className="body-text"><strong>Phone:</strong> {site.phone}</p>
           <p className="body-text"><strong>Address:</strong> {site.address}</p>
         </div>
 

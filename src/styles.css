@@ -210,3 +210,30 @@ a:hover { color: #9c452b; text-decoration: underline; }
   font-size: 1.3rem;
   letter-spacing: 0.03em;
 }
+
+.home-theme {
+  background-image:
+    linear-gradient(160deg, rgba(47,74,58,0.88) 0%, rgba(63,92,71,0.84) 60%, rgba(90,70,54,0.90) 100%),
+    url('/images/theme-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Vendor tiles */
+.vendor-eyebrow { text-align: center; font-family: Georgia, serif; font-style: italic; letter-spacing: 0.08em; color: #b9583a; font-size: 1.3rem; margin: 0 0 6px; }
+.vendor-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px; margin: 28px 0 36px; }
+.vendor-tile { background: #fbf7ef; border: 1px solid #ddd0b8; border-radius: 16px; overflow: hidden; text-align: center; box-shadow: 0 3px 10px rgba(59,45,34,0.10); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.vendor-tile:hover { transform: translateY(-4px); box-shadow: 0 10px 22px rgba(59,45,34,0.18); }
+.vendor-tile__top { height: 130px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #2f4a3a, #5d7a5f); }
+.vendor-tile:nth-child(3n+2) .vendor-tile__top { background: linear-gradient(135deg, #b9583a, #d08a5f); }
+.vendor-tile:nth-child(3n) .vendor-tile__top { background: linear-gradient(135deg, #5a4636, #8a6a4a); }
+.vendor-tile__initial { width: 78px; height: 78px; border-radius: 50%; background: #f6efe3; color: #2f4a3a; display: flex; align-items: center; justify-content: center; font-family: 'Stint Ultra Condensed', 'Arial Black', sans-serif; font-size: 2.6rem; border: 3px solid rgba(246,239,227,0.6); }
+.vendor-tile__logo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; background: #f6efe3; border: 3px solid #f6efe3; }
+.vendor-tile__body { padding: 18px 18px 22px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.vendor-tile__name { margin: 0; font-size: 1.6rem; color: #2f4a3a; line-height: 1.15; }
+.vendor-tile__tagline { margin: 0; font-family: Georgia, serif; color: #5a4636; line-height: 1.5; }
+.vendor-tile__ig { margin-top: 4px; display: inline-block; padding: 7px 16px; border-radius: 999px; border: 2px solid #b9583a; color: #9c452b; font-weight: 700; text-decoration: none; }
+.vendor-tile__ig:hover { background: #b9583a; color: #fbf7ef; }
+.vendor-tile--tba { border-style: dashed; background: #f6efe3; }
+.vendor-tile--tba .vendor-tile__top { background: #ddd0b8; }
+.vendor-tile--tba .vendor-tile__initial { background: transparent; color: #7a6450; border-color: #7a6450; }
