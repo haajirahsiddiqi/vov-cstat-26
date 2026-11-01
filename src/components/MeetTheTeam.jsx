@@ -13,13 +13,19 @@ export default function MeetTheTeam() {
           className="team-photo"
           onError={(e) => (e.currentTarget.style.display = 'none')}
         />
-        {team.members.length > 0 && (
-          <ul className="team-list">
-            {team.members.map((m) => (
-              <li key={m.name}><strong>{m.name}</strong>{m.role ? ` - ${m.role}` : ''}</li>
-            ))}
-          </ul>
-        )}
+        {team.groups.map((g) => (
+          <section key={g.title} className="team-group">
+            <h2 className="team-group__title">{g.title}</h2>
+            <div className="team-cards">
+              {g.members.map((m) => (
+                <div key={m.name} className="team-card">
+                  <strong>{m.name}</strong>
+                  <span>{m.role}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
     </div>
   );

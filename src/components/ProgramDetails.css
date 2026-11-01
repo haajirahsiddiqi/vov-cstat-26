@@ -3,8 +3,8 @@
     min-height: 100vh;
     font-family: 'Barlow Semi Condensed', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #f8f9fa;
+    color: #3b2d22;
+    background: #f6efe3;
 }
 
 /* Hero Section */
@@ -59,7 +59,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 40px;
-    background: #f8f9fa;
+    background: #f6efe3;
 }
 
 /* Section Titles */
@@ -67,7 +67,7 @@
     font-family: 'Stint Ultra Condensed', 'Arial Black', sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
-    color: #2c3e50;
+    color: #3b2d22;
     margin: 50px 0 30px 0;
     text-align: left;
     letter-spacing: 2px;
@@ -109,7 +109,7 @@
     font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #555;
+    color: #5a4636;
     margin: 0 0 20px 0;
     text-align: justify;
 }
@@ -131,11 +131,11 @@
 
 .speakers-list li {
     margin: 15px 0;
-    color: #555;
+    color: #5a4636;
 }
 
 .speakers-list em {
-    color: #1a365d;
+    color: #2f4a3a;
     font-style: italic;
     font-weight: 500;
 }
@@ -202,13 +202,13 @@
 .program-link-text {
     font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 1.1rem;
-    color: #555;
+    color: #5a4636;
     margin: 0 0 20px 0;
 }
 
 .program-document-btn {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    background: #34495e;
+    background: #4a3728;
     color: white;
     padding: 15px 30px;
     border: none;
@@ -223,7 +223,7 @@
 }
 
 .program-document-btn:hover {
-    background: #2c3e50;
+    background: #3b2d22;
     color: white;
     text-decoration: none;
     transform: translateY(-2px);
@@ -233,18 +233,18 @@
 /* Strong text */
 strong {
     font-weight: 600;
-    color: #1a365d;
+    color: #2f4a3a;
 }
 
 /* Links */
 a {
-    color: #3498db;
+    color: #b9583a;
     text-decoration: none;
     font-weight: 600;
 }
 
 a:hover {
-    color: #2980b9;
+    color: #9c452b;
     text-decoration: underline;
 }
 

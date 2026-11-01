@@ -15,6 +15,7 @@ const menu = [
   {
     label: 'Participate',
     children: [
+      { label: 'Vendors', to: '/Vendors' },
       { label: 'Donations', to: '/Donations' },
       { label: 'Registration', to: '/Registration' },
       { label: 'Program Details', to: '/ProgramDetails' },
