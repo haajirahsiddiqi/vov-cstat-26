@@ -8,7 +8,7 @@ export default function Donations() {
       <PageHeader title="Donations" />
       <section className="container page-body">
         <p className="body-text">
-          PLACEHOLDER: Explain what donations support (venue, speakers, scholarships, community meals) and whether donations are tax-deductible.
+          Voices of Virtue is run by students and volunteers. Donations help cover meals, speaker travel and hospitality, and materials for attendees, so the weekend stays affordable for students.
         </p>
         {links.donation ? (
           <a href={links.donation} target="_blank" rel="noreferrer" className="btn btn--dark">Donate now</a>

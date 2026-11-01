@@ -6,7 +6,7 @@
 
 .meet-the-team {
   /* Background image: put about-bg.png in public/images */
-  background-color: #1a365d;
+  background-color: #2f4a3a;
   background-image: url('/images/about-bg.png');
   background-size: cover;
   background-position: center;
@@ -83,7 +83,7 @@
 
 .footer-overlay .footer-link:hover,
 .footer-overlay .contact-button:hover {
-  color: #f0f0f0 !important;
+  color: #ece3d0 !important;
   opacity: 0.8;
 }
 
@@ -147,3 +147,17 @@
   line-height: 1.8;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
+
+/* Team groups */
+.team-group { width: 100%; max-width: 1000px; margin: 0 auto 2.5rem; }
+.team-group__title {
+  color: #f6efe3; font-family: 'Stint Ultra Condensed', 'Arial Black', sans-serif; font-weight: 400;
+  letter-spacing: 3px; text-transform: uppercase; font-size: 2rem; margin: 0 0 1rem; text-align: center;
+}
+.team-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.team-card {
+  background: #fbf7ef; border-radius: 12px; padding: 16px 18px; border-left: 5px solid #b9583a;
+  display: flex; flex-direction: column; gap: 2px; color: #3b2d22;
+}
+.team-card:nth-child(even) { border-left-color: #7a9071; }
+.team-card span { color: #7a6450; font-size: 0.95rem; }

@@ -7,7 +7,7 @@ const hide = (e) => (e.currentTarget.style.display = 'none');
 export default function ProgramDetails() {
   return (
     <div className="program-details-container">
-      <section className="program-hero-section" style={{ backgroundImage: `url(${site.heroImage})`, backgroundColor: '#1a365d' }}>
+      <section className="program-hero-section" style={{ backgroundImage: `url(${site.heroImage}), linear-gradient(135deg, #2f4a3a 0%, #5d7a5f 55%, #a5683f 100%)` }}>
         <div className="program-overlay" />
         <div className="program-content">
           <div className="program-title-section">
@@ -17,6 +17,7 @@ export default function ProgramDetails() {
       </section>
 
       <div className="main-content">
+        {program.theme && (
         <section className="theme-section">
           <h2 className="section-title">Theme: {program.theme}</h2>
           <div className="theme-grid">
@@ -30,15 +31,28 @@ export default function ProgramDetails() {
             </div>
           </div>
         </section>
+        )}
 
         <section className="content-section">
           <h2 className="section-title">Speakers</h2>
           <ul className="speakers-list">
             {program.speakers.map((s, i) => (
-              <li key={i}><em>{s.name}</em> &ndash; {s.bio}</li>
+              <li key={i}><em>{s.name}</em>{s.bio ? <> &ndash; {s.bio}</> : null}</li>
             ))}
           </ul>
         </section>
+
+        {program.reciters.length > 0 && (
+          <section className="content-section">
+            <h2 className="section-title">Reciters</h2>
+            <ul className="speakers-list">
+              {program.reciters.map((r, i) => (
+                <li key={i}><em>{r.name}</em>{r.bio ? <> &ndash; {r.bio}</> : null}</li>
+              ))}
+            </ul>
+            {program.reciterNote && <p className="theme-description">{program.reciterNote}</p>}
+          </section>
+        )}
 
         {program.speakerPhotos.length > 0 && (
           <section className="speakers-photos-section">
@@ -60,6 +74,9 @@ export default function ProgramDetails() {
                 </div>
               ))}
             </div>
+          )}
+          {program.schedule.length === 0 && program.scheduleText.length === 0 && (
+            <p className="theme-description">The full schedule will be posted soon.</p>
           )}
           {program.schedule.length === 0 && program.scheduleText.map((d) => (
             <div key={d.day}>

@@ -12,6 +12,7 @@ import Sponsors from './components/Sponsors.jsx';
 import Donations from './components/Donations.jsx';
 import Registration from './components/Registration.jsx';
 import ProgramDetails from './components/ProgramDetails.jsx';
+import Vendors from './components/Vendors.jsx';
 import ContactUs from './components/ContactUs.jsx';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
           <Route path="/Sponsors" element={<Sponsors />} />
           <Route path="/Donations" element={<Donations />} />
+          <Route path="/Vendors" element={<Vendors />} />
           <Route path="/Registration" element={<Registration />} />
           <Route path="/ProgramDetails" element={<ProgramDetails />} />
           <Route path="/ContactUs" element={<ContactUs />} />
