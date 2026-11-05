@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ProgramDetails.css';
 import { program, links, site } from '../siteContent.js';
+import { assetPath } from '../utils/assetPath.js';
 
 const hide = (e) => (e.currentTarget.style.display = 'none');
 
@@ -27,7 +28,7 @@ function SpeakerCard({ person }) {
     <div className={`spk-card ${open ? 'spk-card--open' : ''}`}>
       <div className="spk-card__portrait">
         {person.photo ? (
-          <img src={person.photo} alt={person.name} onError={hide} />
+          <img src={assetPath(person.photo)} alt={person.name} onError={hide} />
         ) : (
           <span>{initials}</span>
         )}
@@ -72,7 +73,7 @@ export default function ProgramDetails() {
             <SectionTitle eyebrow="This year’s theme">{program.theme}</SectionTitle>
             <div className="theme-grid">
               <div className="theme-image-column">
-                <img src={program.themePoster} alt="Theme poster" className="theme-poster" onError={hide} />
+                <img src={assetPath(program.themePoster)} alt="Theme poster" className="theme-poster" onError={hide} />
               </div>
               <div className="theme-text-column">
                 {program.themeParagraphs.map((p, i) => (
@@ -96,7 +97,7 @@ export default function ProgramDetails() {
           <section className="speakers-photos-section">
             <div className="speakers-grid">
               {program.speakerPhotos.map((src) => (
-                <img key={src} src={src} alt="Speaker" className="speaker-photo" onError={hide} />
+                <img key={src} src={assetPath(src)} alt="Speaker" className="speaker-photo" onError={hide} />
               ))}
             </div>
           </section>
@@ -108,7 +109,7 @@ export default function ProgramDetails() {
             <div className="schedule-grid">
               {program.schedule.map((src) => (
                 <div key={src} className="schedule-item">
-                  <img src={src} alt="Schedule" className="schedule-image" onError={hide} />
+                  <img src={assetPath(src)} alt="Schedule" className="schedule-image" onError={hide} />
                 </div>
               ))}
             </div>

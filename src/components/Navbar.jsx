@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { site } from '../siteContent.js';
+import { assetPath } from '../utils/assetPath.js';
 
 const menu = [
   { label: 'Home', to: '/' },
@@ -42,7 +43,7 @@ export default function Navbar() {
   return (
     <header className={`navbar ${scrolled || pathname !== '/' ? 'navbar--solid' : ''}`}>
       <Link to="/" className="navbar__brand">
-        <img src={site.logo} alt="" className="navbar__logo" onError={(e) => (e.currentTarget.style.display = 'none')} />
+        <img src={assetPath(site.logo)} alt="" className="navbar__logo" onError={(e) => (e.currentTarget.style.display = 'none')} />
         <span>{site.name}</span>
       </Link>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageHeader from './PageHeader.jsx';
 import { vendors } from '../siteContent.js';
+import { assetPath } from '../utils/assetPath.js';
 
 const hide = (e) => (e.currentTarget.style.display = 'none');
 
@@ -13,7 +14,7 @@ function VendorCard({ vendor }) {
     <div className={`vendor-tile ${vendor.tba ? 'vendor-tile--tba' : ''}`}>
       <div className="vendor-tile__top">
         {vendor.logo ? (
-          <img src={vendor.logo} alt={vendor.name} className="vendor-tile__logo" onError={hide} />
+          <img src={assetPath(vendor.logo)} alt={vendor.name} className="vendor-tile__logo" onError={hide} />
         ) : (
           <span className="vendor-tile__initial">{vendor.tba ? '?' : letter}</span>
         )}

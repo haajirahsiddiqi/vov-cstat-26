@@ -1,6 +1,7 @@
 import React from 'react';
 import './MeetTheTeam.css';
 import { team } from '../siteContent.js';
+import { assetPath } from '../utils/assetPath.js';
 
 export default function MeetTheTeam() {
   return (
@@ -8,7 +9,7 @@ export default function MeetTheTeam() {
       <div className="meet-the-team">
         <h1 className="team-title">MEET THE TEAM</h1>
         <img
-          src={team.photo}
+          src={assetPath(team.photo)}
           alt="The organizing team"
           className="team-photo"
           onError={(e) => (e.currentTarget.style.display = 'none')}
