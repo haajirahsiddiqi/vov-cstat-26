@@ -72,44 +72,38 @@ export const program = {
     {
       name: 'Shaykh Arsalan Haque',
       title: 'Imam, Islamic Association of Collin County',
-      photo: '',
+      photo: '/images/speakers/shaykh.png',
       bio: 'Shaykh Arsalan Haque is an Islamic scholar and Imam who studied Islamic sciences in Damascus and graduated from the College of Sharia at Al-Azhar University in Cairo. He has received ijazat in Qur’anic recitation, Hadith, Shafi’i Fiqh, Usul al-Fiqh, and Tasawwuf. He currently serves as the Imam of the Islamic Association of Collin County in Texas.',
     },
     {
       name: 'Mufti Wasim Khan',
       title: 'Resident Scholar, Darul Hafidheen',
-      photo: '',
+      photo: '/images/speakers/mufti.png',
       bio: 'Mufti Wasim Khan is an Islamic scholar who pursued his studies across multiple countries, specializing in Qur’an, Tafsir, Hadith, and Fiqh. He is an experienced educator and international speaker who regularly participates in conferences, youth programs, and community initiatives. He is also the founder of the Khateeb Notes initiative, connecting scholars worldwide through shared khutbah resources.',
     },
     {
       name: 'Mufti Anwer Imam',
       title: 'Imam and Director of Religious Affairs, Nueces Mosque',
-      photo: '',
+      photo: '/images/speakers/imam.png',
       bio: 'Mufti Anwer Imam is an Islamic scholar who graduated from Qalam Seminary’s Alimiyyah program and completed a specialization in Islamic law and issuing legal verdicts (Takhassus fi al-Ifta). He has studied under renowned scholars and holds an ijazah in Qur’anic memorization and recitation. He currently serves as the Imam and Director of Religious Affairs at Nueces Mosque in Austin, Texas.',
     },
     {
       name: 'Ustadha Sophia Khan',
       title: 'Director of Girls Tarbiyah, Islamic Center of Frisco',
-      photo: '',
+      photo: '/images/speakers/ustadha.png',
       bio: 'Ustadha Sophia Khan is an Islamic educator and youth mentor with an academic background in Islamic Shariah Law and Psychology. She studied at the University of Sharjah in the UAE and has spent over fifteen years mentoring Muslim youth. Her work focuses on helping young Muslims navigate everyday challenges while strengthening their faith and identity.',
     },
     {
       name: 'Aalima Maha Feroze',
       title: 'Islamic Scholar and Educator',
-      photo: '',
-      bio: '',   // add once she sends her own bio
+      photo: '/images/speakers/aalima.png',
+      bio: 'Aalima Maha Firoze is an educator and community leader from Dallas, Texas, who earned her Alimiyyah degree in 2017 from Darul Uloom in Buffalo, New York. She began her community leadership as MSA President at Collin College in 2020, then served as the female resident scholar at ISRA Foundation from 2021 to 2024.',  
     },
     {
       name: 'Qari Ifdal',
       title: 'Quran Reciter and Hafidh',
-      photo: '',
+      photo: '/images/speakers/qari.png',
       bio: 'Qari Ifdal is a Qur’an reciter and Hafiz who memorized the Holy Qur’an at the age of 14. He studied Arabic at Bayyinah Institute and has experience leading Taraweeh prayers at mosques across the United States. He is also involved in Qur’anic education and teaching.',
-    },
-    {
-      name: 'Aalima Artisia Susanto',
-      title: 'Islamic Educator',
-      photo: '',
-      bio: '',   // add once she sends her own bio
     },
   ],
   reciters: [
@@ -129,7 +123,7 @@ export const program = {
   reciterNote: 'Recitation sponsored by Droplets of Mercy.',
   speakerPhotos: [],
   schedule: [
-    // '/images/schedule-day1.jpg', '/images/schedule-day2.jpg',
+    '/images/schedule-day1and2.jpeg', 
   ],
   scheduleText: [],
 };
@@ -169,13 +163,14 @@ export const vendors = {
   // name is required. Everything else is optional.
   // instagram = handle only (no @, no link). logo = e.g. '/images/vendors/the-cove.png'
   list: [
-    { name: 'The Cove', tagline: '', instagram: 'thecove.inc', logo: '' },
-    { name: 'Ari’s Bakery', tagline: '', instagram: '', logo: '' },
-    { name: 'Craft.Hsi', tagline: '', instagram: '', logo: '' },
-    { name: 'The Savor Art', tagline: '', instagram: 'thesavorart', logo: '' },
-    { name: 'Toki Cookies', tagline: '', instagram: 'tokicookiess', logo: '' },
-    { name: 'Timeless Oud', tagline: '', instagram: 'timeless.oud', logo: '' },
-    { name: 'One more vendor to be announced', tagline: 'Stay tuned!', instagram: '', logo: '', tba: true },
+    { name: 'The Cove', tagline: 'Discover The Cove, your destination for high-end accessories and jewelry. Explore a curated collection of elegant, timeless pieces designed to elevate your style and add a touch of sophistication to any occasion.', instagram: 'thecove.inc', logo: '/images/vendors/the-cove.png' },
+    { name: 'Ari’s Bakery', tagline: 'Ari’s Bakery brings the warmth of homemade baking to every treat. From freshly baked delights to sweet creations made with love, there’s something special waiting for every dessert lover.', instagram: 'arisatelier', logo: '/images/vendors/aris-bakery.png' },
+    { name: 'Craft.Hsi', tagline: 'Add a personal touch to your everyday style with Craft.Hsi! Explore a charming collection of bracelets and accessories, featuring unique charms and thoughtful details that make every piece your own.', instagram: 'craft.hsi', logo: '/images/vendors/craft-hsi.png' },
+    { name: 'Heavenly Creations', tagline: 'From beautifully crafted cakes to savory delights, Heavenly Creations has something for everyone! Stop by to enjoy a delicious selection of biryani, chicken rolls, kebabs, and sliders, all made with care. Whether youre craving something sweet or savory, there is a little something heavenly waiting for you at Souq al-Layl!', instagram: 'madebyheavenly', logo: '/images/vendors/heavenly.jpg' },
+    { name: 'The Savor Art', tagline: 'Indulge in the art of gourmet desserts with The Savor Art. Featuring homemade sweet creations crafted with care, each dessert brings together delicious flavors and a touch of artistry for a truly special treat.', instagram: 'thesavorart', logo: '/images/vendors/the-savor-art.png' },
+    { name: 'Toki Cookies', tagline: 'Freshly baked, irresistibly delicious, and made with love! Toki Cookies brings you homemade cookies that are perfect for satisfying your sweet tooth and sharing a little sweetness with those around you.', instagram: 'tokicookiess', logo: '/images/vendors/toki-cookies.png' },
+    { name: 'Timeless Oud', tagline: 'Discover the captivating world of oud with Timeless Oud. Explore a collection of rich, aromatic oud oils inspired by the timeless tradition of Middle Eastern perfumery. Find a fragrance that leaves a lasting impression.', instagram: 'timeless.oud', logo: '/images/vendors/timeless-oud.png' },
+    { name: 'Timber', tagline: 'Where artistry meets tradition. Timber brings the beauty of Arabic calligraphy to life through elegant wood-crafted designs. Discover meaningful pieces that celebrate the timeless beauty of Arabic lettering and craftsmanship.', instagram: 'timbercalligraphy', logo: '/images/vendors/timber.png'},
   ],
 };
 

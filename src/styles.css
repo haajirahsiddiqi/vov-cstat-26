@@ -237,3 +237,5 @@ a:hover { color: #9c452b; text-decoration: underline; }
 .vendor-tile--tba { border-style: dashed; background: #f6efe3; }
 .vendor-tile--tba .vendor-tile__top { background: #ddd0b8; }
 .vendor-tile--tba .vendor-tile__initial { background: transparent; color: #7a6450; border-color: #7a6450; }
+
+.vendor-tile__logo { object-fit: contain; padding: 6px; box-sizing: border-box; }
