@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react';
 // If you host in a subfolder (e.g. yourdomain.com/2026/), change to base: '/2026/'
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/vov-2026/',
 });
