@@ -7,7 +7,7 @@
 ## Edit content
 - All text, dates, links and image names: src/siteContent.js (search for PLACEHOLDER)
 - Images: public/images   (logo goes in public/logo.png)
-- Colors / layout: src/styles.css  (Program Details and Meet the Team keep their own CSS files from last year)
+- Colors / layout: src/styles.css 
 
 ## Preview on your computer
 npm run dev     -> opens at http://localhost:5173

@@ -17,6 +17,11 @@ export default function Donations() {
             <p>Online donations are not open yet. To give, email <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
           </div>
         )}
+        {links.donation && (
+          <p className="body-text">
+            Please mention “Voices of Virtue conference” in the donation memo. Jazakum Allahu khairan for your time and consideration.
+          </p>
+        )}
       </section>
     </>
   );
