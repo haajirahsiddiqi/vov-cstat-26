@@ -129,12 +129,6 @@ a:hover { color: #9c452b; text-decoration: underline; }
 .callout p { margin: 0 0 16px; font-family: Georgia, serif; color: #5a4636; }
 .callout .btn { margin-top: 4px; }
 
-/* Sponsors */
-.sponsor-tier { margin-top: 40px; }
-.sponsor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-.sponsor-logo { display: flex; align-items: center; justify-content: center; background: #fbf7ef; border-radius: 8px; padding: 20px; min-height: 120px; box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
-.sponsor-logo img { max-height: 90px; object-fit: contain; }
-
 /* Contact */
 .contact-grid { max-width: 1000px; display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; }
 .contact-form { display: flex; flex-direction: column; gap: 18px; }

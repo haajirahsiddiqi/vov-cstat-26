@@ -9,7 +9,6 @@ const menu = [
     children: [
       { label: 'Texas Islamic Conference', to: '/TexasIslamicConference' },
       { label: 'Meet the Team', to: '/MeetTheTeam' },
-      { label: 'Sponsors', to: '/Sponsors' },
     ],
   },
   {

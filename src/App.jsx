@@ -8,7 +8,6 @@ import Footer from './components/Footer.jsx';
 import Home from './components/Home.jsx';
 import TexasIslamicConference from './components/TexasIslamicConference.jsx';
 import MeetTheTeam from './components/MeetTheTeam.jsx';
-import Sponsors from './components/Sponsors.jsx';
 import Donations from './components/Donations.jsx';
 import Registration from './components/Registration.jsx';
 import ProgramDetails from './components/ProgramDetails.jsx';
@@ -25,7 +24,6 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/TexasIslamicConference" element={<TexasIslamicConference />} />
           <Route path="/MeetTheTeam" element={<MeetTheTeam />} />
-          <Route path="/Sponsors" element={<Sponsors />} />
           <Route path="/Donations" element={<Donations />} />
           <Route path="/Vendors" element={<Vendors />} />
           <Route path="/Registration" element={<Registration />} />

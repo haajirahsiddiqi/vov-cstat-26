@@ -9,21 +9,20 @@ export const site = {
   tagline: 'Texas Islamic Conference',
   date: 'November 6–7, 2026',
   location: 'Islamic Community of Bryan-College Station',
-  email: 'voicesofvirtue.cstat@gmail.com',                 // PLACEHOLDER
-  address: 'Islamic Community of Bryan-College Station, College Station, TX',  // PLACEHOLDER: add street address
+  email: 'voicesofvirtue.cstat@gmail.com',                
+  address: 'Islamic Community of Bryan-College Station, College Station, TX',  
   heroImage: '/images/hero.jpg',
   banner: '/images/banner.jpg',
   logo: '/logo.png',
   social: [
-    // { label: 'Instagram', url: 'https://instagram.com/yourpage' },
-    // { label: 'Facebook', url: 'https://facebook.com/yourpage' },
+    { label: 'Instagram', url: 'https://www.instagram.com/voices.of.virtue/' }
   ],
 };
 
 // Where the buttons go. Use any hosted form/payment page (Eventbrite, Google Form, Zeffy, Stripe link, etc.)
 export const links = {
   registration: 'https://ummahapp.io/events/bc427691-4d34-4b09-8f16-bcd03404c521',
-  donation: '',       // PLACEHOLDER e.g. 'https://donate.stripe.com/...'
+  donation: 'https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=a9990869-935e-418e-999e-f3acef90cfdb&envid=p-5bhc0QO3mk2qiv3fYkOL6w',
   programPdf: '',     // PLACEHOLDER e.g. '/files/program.pdf' (put the file in /public/files)
   // Contact form: create a free form at formspree.io and paste its URL here, e.g. 'https://formspree.io/f/xxxxxxx'
   // If left empty, the form opens the visitor's email app addressed to site.email instead.
@@ -106,21 +105,21 @@ export const program = {
       bio: 'Qari Ifdal is a Qur’an reciter and Hafiz who memorized the Holy Qur’an at the age of 14. He studied Arabic at Bayyinah Institute and has experience leading Taraweeh prayers at mosques across the United States. He is also involved in Qur’anic education and teaching.',
     },
   ],
-  reciters: [
-    {
-      name: 'Qari Abdullah Abualnaja',
-      title: '',
-      photo: '',
-      bio: 'Qari Abdullah Abualnaja is a Qur’an reciter known for his participation in Qur’anic recitation events and competitions. He secured first place in the 2024 North America Imam Al-Shatibi Qur’an Competition, showcasing his dedication to the art of Qur’anic recitation.',
-    },
-    {
-      name: 'Qari Rayyan Syed',
-      title: '',
-      photo: '',
-      bio: '',   // add once he sends his own bio
-    },
-  ],
-  reciterNote: 'Recitation sponsored by Droplets of Mercy.',
+  // reciters: [
+  //   {
+  //     name: 'Qari Abdullah Abualnaja',
+  //     title: '',
+  //     photo: '',
+  //     bio: 'Qari Abdullah Abualnaja is a Qur’an reciter known for his participation in Qur’anic recitation events and competitions. He secured first place in the 2024 North America Imam Al-Shatibi Qur’an Competition, showcasing his dedication to the art of Qur’anic recitation.',
+  //   },
+  //   {
+  //     name: 'Qari Rayyan Syed',
+  //     title: '',
+  //     photo: '',
+  //     bio: '',   // add once he sends his own bio
+  //   },
+  // ],
+  // reciterNote: 'Recitation sponsored by Droplets of Mercy.',
   speakerPhotos: [],
   schedule: [
     '/images/schedule-day1and2.jpeg', 
@@ -141,7 +140,7 @@ export const team = {
       { name: 'Aliza Abidi', role: 'Social Media Chair' },
       { name: 'Usman Siddiqui', role: 'Volunteer Chair' },
       { name: 'Filza Rahman', role: 'Web Developer' },
-      { name: 'Haajirah Siddiqui', role: 'Web Developer' },
+      { name: 'Haajirah Siddiqi', role: 'Web Developer' },
     ]},
     { title: 'MSA Representatives', members: [
       { name: 'Ayaan Aziz', role: 'President' },
@@ -172,12 +171,4 @@ export const vendors = {
     { name: 'Timeless Oud', tagline: 'Discover the captivating world of oud with Timeless Oud. Explore a collection of rich, aromatic oud oils inspired by the timeless tradition of Middle Eastern perfumery. Find a fragrance that leaves a lasting impression.', instagram: 'timeless.oud', logo: '/images/vendors/timeless-oud.png' },
     { name: 'Timber', tagline: 'Where artistry meets tradition. Timber brings the beauty of Arabic calligraphy to life through elegant wood-crafted designs. Discover meaningful pieces that celebrate the timeless beauty of Arabic lettering and craftsmanship.', instagram: 'timbercalligraphy', logo: '/images/vendors/timber.png'},
   ],
-};
-
-export const sponsors = {
-  intro: 'We are grateful to the sponsors who make this event possible.',
-  tiers: [
-    // { tier: 'Gold', items: [{ name: 'Company', logo: '/images/sponsor-company.png', url: 'https://company.com' }] },
-  ],
-  becomeSponsorText: 'Interested in sponsoring? Get in touch and we will send you our sponsorship packages.',
 };

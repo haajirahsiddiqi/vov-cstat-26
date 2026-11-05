@@ -50,7 +50,6 @@ export default function Home() {
         <div className="container home-cards__grid">
           <Link to="/Registration" className="home-card"><h3>Registration</h3><p>Reserve your spot.</p></Link>
           <Link to="/Donations" className="home-card"><h3>Donations</h3><p>Support the conference.</p></Link>
-          <Link to="/Sponsors" className="home-card"><h3>Sponsors</h3><p>Thank the people who make it possible.</p></Link>
           <Link to="/Vendors" className="home-card"><h3>Vendors</h3><p>Shop small and local.</p></Link>
         </div>
       </section>
