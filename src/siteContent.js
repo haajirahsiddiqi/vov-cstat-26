@@ -106,13 +106,13 @@ export const program = {
     },
     {
       name: 'Shaykh Qawiuddin Madani',
-      title: 'National Youth Director, Dawat-e-Islami USA',
+      title: 'National Youth Director, Dawat-e-Islami',
       photo: '/images/speakers/Qawiuddin.png',
       bio: 'Shaykh Qawiuddin Madani is an Islamic scholar who completed his Alimiyyah studies at Jamia-tul-Madinah USA, specializing in Arabic linguistics and classical Islamic sciences. He previously served as an instructor of Arabic and Islamic studies at Jamia-tul-Madinah campuses in Houston and Baltimore. He currently serves as the National Youth Director of Dawat-e-Islami USA, leading nationwide youth initiatives, delivering community seminars, and pursuing a degree in Psychology to support Muslim mental health and well-being.',
     },
     {
       name: 'Imam Qasim Madani',
-      title: 'Principal, Jamia-tul-Madinah Houston USA',
+      title: 'Principal, Jamia-tul-Madinah Houston',
       photo: '/images/speakers/Qasim.png',
       bio: 'Imam Qasim Madani is a Hafiz and Islamic scholar who completed his Alimiyyah studies at Jamia-tul-Madinah USA, specializing in Quranic studies, Hadith, Fiqh, and classical Arabic. He has served the community as an Imam, instructor, and educational administrator. He currently serves as the Principal of Jamia-tul-Madinah Houston USA, guiding student academic development and nurturing the next generation of Islamic scholars.',
     },

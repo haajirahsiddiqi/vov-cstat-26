@@ -105,19 +105,25 @@ export default function ProgramDetails() {
 
         <section className="content-section">
           <SectionTitle eyebrow="Two days of knowledge">Schedule</SectionTitle>
-          {program.schedule.length > 0 && (
+          {program.scheduleEmbeds.length > 0 && (
             <div className="schedule-grid">
-              {program.schedule.map((src) => (
-                <div key={src} className="schedule-item">
-                  <img src={assetPath(src)} alt="Schedule" className="schedule-image" onError={hide} />
+              {program.scheduleEmbeds.map((schedule) => (
+                <div key={schedule.src} className="schedule-item">
+                  <h3 className="schedule-day">{schedule.day}</h3>
+                  <iframe
+                    src={schedule.src}
+                    title={`${schedule.day} schedule`}
+                    className="schedule-embed"
+                    loading="lazy"
+                  />
                 </div>
               ))}
             </div>
           )}
-          {program.schedule.length === 0 && program.scheduleText.length === 0 && (
+          {program.scheduleEmbeds.length === 0 && program.schedule.length === 0 && program.scheduleText.length === 0 && (
             <p className="pd-empty">The full schedule will be posted soon.</p>
           )}
-          {program.schedule.length === 0 && program.scheduleText.map((d) => (
+          {program.scheduleEmbeds.length === 0 && program.schedule.length === 0 && program.scheduleText.map((d) => (
             <div key={d.day}>
               <h3>{d.day}</h3>
               <ul className="speakers-list">
