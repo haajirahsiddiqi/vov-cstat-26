@@ -49,6 +49,7 @@ export default function Home() {
       <section className="home-cards">
         <div className="container home-cards__grid">
           <Link to="/Registration" className="home-card"><h3>Registration</h3><p>Reserve your spot.</p></Link>
+          <Link to="/ProgramDetails#schedule" className="home-card"><h3>Program Schedule</h3><p>View the full conference schedule.</p></Link>
           <Link to="/Donations" className="home-card"><h3>Donations</h3><p>Support the conference.</p></Link>
           <Link to="/Vendors" className="home-card"><h3>Vendors</h3><p>Shop small and local.</p></Link>
         </div>

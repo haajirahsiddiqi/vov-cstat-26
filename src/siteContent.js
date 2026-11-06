@@ -74,12 +74,12 @@ export const program = {
       photo: '/images/speakers/shaykh.png',
       bio: 'Shaykh Arsalan Haque is an Islamic scholar and Imam who studied Islamic sciences in Damascus and graduated from the College of Sharia at Al-Azhar University in Cairo. He has received ijazat in Qur’anic recitation, Hadith, Shafi’i Fiqh, Usul al-Fiqh, and Tasawwuf. He currently serves as the Imam of the Islamic Association of Collin County in Texas.',
     },
-    {
-      name: 'Mufti Wasim Khan',
-      title: 'Resident Scholar, Darul Hafidheen',
-      photo: '/images/speakers/mufti.png',
-      bio: 'Mufti Wasim Khan is an Islamic scholar who pursued his studies across multiple countries, specializing in Qur’an, Tafsir, Hadith, and Fiqh. He is an experienced educator and international speaker who regularly participates in conferences, youth programs, and community initiatives. He is also the founder of the Khateeb Notes initiative, connecting scholars worldwide through shared khutbah resources.',
-    },
+    // {
+    //   name: 'Mufti Wasim Khan',
+    //   title: 'Resident Scholar, Darul Hafidheen',
+    //   photo: '/images/speakers/mufti.png',
+    //   bio: 'Mufti Wasim Khan is an Islamic scholar who pursued his studies across multiple countries, specializing in Qur’an, Tafsir, Hadith, and Fiqh. He is an experienced educator and international speaker who regularly participates in conferences, youth programs, and community initiatives. He is also the founder of the Khateeb Notes initiative, connecting scholars worldwide through shared khutbah resources.',
+    // },
     {
       name: 'Mufti Anwer Imam',
       title: 'Imam and Director of Religious Affairs, Nueces Mosque',

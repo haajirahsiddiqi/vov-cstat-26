@@ -103,7 +103,7 @@ export default function ProgramDetails() {
           </section>
         )}
 
-        <section className="content-section">
+        <section id="schedule" className="content-section">
           <SectionTitle eyebrow="Two days of knowledge">Schedule</SectionTitle>
           {program.scheduleEmbeds.length > 0 && (
             <div className="schedule-grid">
